@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Typography } from "@material-ui/core";
 import TestTable from "./TestTable";
-import http from "services/http";
+import testService from "services/testService";
 
 const Test = () => {
   const [users, setUsers] = useState([]);
@@ -9,11 +9,11 @@ const Test = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    http
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then((json) => {
-        console.log(json.data);
-        setUsers(json.data);
+    testService
+      .getUsers()
+      .then((data) => {
+        console.log(data);
+        setUsers(data);
         setIsLoading(false);
       })
       .catch((err) => {

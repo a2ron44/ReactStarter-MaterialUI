@@ -6,12 +6,15 @@ const useStyles = makeStyles((theme) => ({
   blah: theme.global.textRight,
 }));
 
+const test = () => {
+  throw new Error("test2");
+};
 const TestButton = () => {
   const classes = useStyles();
   return (
     <>
       <Typography className={classes.blah}>Test2</Typography>
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" onClick={test}>
         This is a button
       </Button>
     </>
