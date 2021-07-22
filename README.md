@@ -13,7 +13,7 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 
 ```
 	> git clone https://github.com/a2ron44/ReactStarter-MaterialUI.git
-	> cd ReactStarter-MaterialUI
+	> cd ReactStarter-MaterialUI/
 	> npm install
 	> npm start
 ```
