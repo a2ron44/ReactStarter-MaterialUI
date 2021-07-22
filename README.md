@@ -12,8 +12,8 @@ There are two methods for getting started with this repo.
 Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
-	> git clone [repo]
-	> cd ReactStarter
+	> git clone https://github.com/a2ron44/ReactStarter-MaterialUI.git
+	> cd ReactStarter-MaterialUI
 	> npm install
 	> npm start
 ```
